@@ -3,17 +3,51 @@
   
   <url>
     <loc>https://jiangfengwhu.github.io/categories/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiangfengwhu.github.io/tags/centos/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiangfengwhu.github.io/post/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jiangfengwhu.github.io/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jiangfengwhu.github.io/tags/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiangfengwhu.github.io/categories/web/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiangfengwhu.github.io/tags/web/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiangfengwhu.github.io/post/%E7%BD%91%E7%AB%99%E8%BF%81%E7%A7%BB/</loc>
+    <lastmod>2019-04-25T20:36:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>
