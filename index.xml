@@ -6,10 +6,19 @@
     <description>Recent content on Saber&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Apr 2019 20:36:05 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2019 16:40:27 +0800</lastBuildDate>
     
 	<atom:link href="https://jiangfengwhu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>深度学习基础知识笔记</title>
+      <link>https://jiangfengwhu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 02 Jul 2019 16:40:27 +0800</pubDate>
+      
+      <guid>https://jiangfengwhu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/</guid>
+      <description>深度学习基础部分个人觉得实践中比较重要的部分小结 Why deep learning Weights initialization 网络权重不能使用相同的初始值，会造成hidden layer的有效units变成一个</description>
+    </item>
     
     <item>
       <title>网站搬家</title>

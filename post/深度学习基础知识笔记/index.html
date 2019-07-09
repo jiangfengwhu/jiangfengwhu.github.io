@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>深度学习基础知识笔记 - Saber&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Saber" /><meta name="description" content="深度学习基础知识备忘录" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.5 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://jiangfengwhu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="深度学习基础知识笔记" />
+<meta property="og:description" content="深度学习基础知识备忘录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jiangfengwhu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/" />
+<meta property="article:published_time" content="2019-07-02T16:40:27&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-02T16:40:27&#43;08:00"/>
+
+<meta itemprop="name" content="深度学习基础知识笔记">
+<meta itemprop="description" content="深度学习基础知识备忘录">
+
+
+<meta itemprop="datePublished" content="2019-07-02T16:40:27&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-02T16:40:27&#43;08:00" />
+<meta itemprop="wordCount" content="1039">
+
+
+
+<meta itemprop="keywords" content="Deep Learning,实践Tips," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="深度学习基础知识笔记"/>
+<meta name="twitter:description" content="深度学习基础知识备忘录"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Avalon</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">目录</li>
+      </a><a href="https://spectrumlife.online">
+        <li class="mobile-menu-item">主站</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Avalon</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">目录</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://spectrumlife.online">主站</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">深度学习基础知识笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-02 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
+            </div>
+          <span class="more-meta"> 约 1039 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#why-deep-learning">Why deep learning</a></li>
+<li><a href="#weights-initialization">Weights initialization</a></li>
+<li><a href="#regularization">Regularization</a></li>
+<li><a href="#normalizing-input">Normalizing Input</a></li>
+<li><a href="#mini-batch">Mini-Batch</a></li>
+<li><a href="#optimizer">Optimizer</a></li>
+<li><a href="#learning-rate-decay">Learning rate decay</a></li>
+<li><a href="#local-optima">Local optima</a></li>
+<li><a href="#tuning-process">Tuning process</a></li>
+<li><a href="#batch-normalization">Batch Normalization</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<blockquote>
+<p>深度学习基础部分个人觉得实践中比较重要的部分小结</p>
+</blockquote>
+
+<h1 id="why-deep-learning">Why deep learning</h1>
+
+<p><img src="/jul8/1.png" alt="why" /></p>
+
+<h1 id="weights-initialization">Weights initialization</h1>
+
+<ul>
+<li>网络权重不能使用相同的初始值，会造成hidden layer的有效units变成一个。同时需要注意的是选取初始值需要避开activation的plateau，例如：对于分类问题，尽量选取小的weights初始值</li>
+<li>对于vanishing/exploding gradients问题有一定的帮助</li>
+</ul>
+
+<p><img src="/jul8/5.png" alt="init weights" /></p>
+
+<h1 id="regularization">Regularization</h1>
+
+<p>正则化可以压缩网络，降低模型复杂度，对防止over fitting有一定的效果，带一个超参数：正则化因子
+<img src="/jul8/3.jpg" alt="regL2" /></p>
+
+<ul>
+<li>一般只对$W$进行正则化，相比于$B$参数更多，对cost的影响占主导，所以一般就舍去对参数b的正则化</li>
+<li>$L_{2}$正则化又称为weight decay，是一种比较常用的正则化</li>
+<li>dropout只在training时期生效，同时需要注意inverted dropout，对$A$进行scale。dropout对任何一个feature都有可能使其失效，对weights起到了spread out的作用，和$L_{2}$具有相似的正则化功能</li>
+</ul>
+
+<p><img src="/jul8/4.jpg" alt="reg_dropout" /></p>
+
+<h1 id="normalizing-input">Normalizing Input</h1>
+
+<p>对输入进行正则化可以提高训练速度，是一个best practice
+<img src="/jul8/2.jpg" alt="norm" /></p>
+
+<h1 id="mini-batch">Mini-Batch</h1>
+
+<p>对于大训练集，mini-Batch梯度下降比Batch梯度下降要快。
+<img src="/jul8/6.jpg" alt="mini-batch-fig" /></p>
+
+<p><img src="/jul8/7.jpg" alt="mini-batch" /></p>
+
+<h1 id="optimizer">Optimizer</h1>
+
+<ul>
+<li><p>动量梯度下降(momentum)：计算梯度的指数加权平均(exponentially weighted averages)，梯度下降的每一步变得平滑
+<img src="/jul8/8.jpg" alt="momentum" /></p></li>
+
+<li><p>RMSprop，均方根传递(Root Mean Square prop)，它也可以加速梯度下降
+<img src="/jul8/9.jpg" alt="RMSprop" /></p></li>
+
+<li><p>Adam(Adaptive Moment Estimation)：结合了momentum和RMSprop。理论上讲效果最好
+<img src="/jul8/10.jpg" alt="Adam" /></p></li>
+</ul>
+
+<h1 id="learning-rate-decay">Learning rate decay</h1>
+
+<p>随着迭代步长的增加，会逐步向最小值靠近 但不会完全收敛到这点，算法会在最小值周围浮动，降低学习率，最终将围绕着离极小值点更近的区域摆动，这是我们想要的结果。
+<img src="/jul8/11.jpg" alt="rdecay" /></p>
+
+<h1 id="local-optima">Local optima</h1>
+
+<p>高维空间局部最优出现的几率非常小（每个方向的凹凸性相同），大多是saddle point。
+<img src="/jul8/12.jpg" alt="locop" /></p>
+
+<h1 id="tuning-process">Tuning process</h1>
+
+<p><img src="/jul8/13.jpg" alt="tune" /></p>
+
+<h1 id="batch-normalization">Batch Normalization</h1>
+
+<p>对hidden layer进行归一化，对$z$还是$a$进行归一化在学术界还是有争议的，可以都试试，在实际中，大多是对$z$，也就是在激活函数前。</p>
+
+<ul>
+<li>超参搜索变得很简单</li>
+<li>神经网络变得更加具有鲁棒性</li>
+<li>神经网络对于超参数的选择上不再那么敏感</li>
+<li>更容易地训练非常深的网络
+<br /></li>
+</ul>
+
+<p><img src="/jul8/14.jpg" alt="batnor_imp" />
+<img src="/jul8/15.jpg" alt="bat_mini" />
+同时，mini-batch还有轻微regularization的功能，但并不是mini-batch的目的，主要来源于mean，std计算时用的mini-batch的数据，会起到类似dropout的功能。
+<img src="/jul8/16.jpg" alt="bat_reg" />
+同时，在测试集上一个一个预测时，采用指数加权平均数来估算mean和std，具体如下
+<img src="/jul8/17.jpg" alt="bat_reg" /></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Saber</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-07-02
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://mit-license.org/" target="_blank">MIT</a></span>
+  </p>
+</div>
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/wechat.jpeg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/alipay.jpeg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/deep-learning/">Deep Learning</a>
+          <a href="/tags/%E5%AE%9E%E8%B7%B5tips/">实践Tips</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E7%BD%91%E7%AB%99%E8%BF%81%E7%A7%BB/">
+            <span class="next-text nav-default">网站搬家</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:jiangfengwhu2011@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/jiangfengwhu202" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/profile.php?id=100008961307821" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://github.com/jiangfengwhu" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.tumblr.com/blog/jiangfengwhu" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="https://www.instagram.com/jiangfeng2011/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://gitlab.cern.ch/fejiang" class="iconfont icon-gitlab" title="gitlab"></a>
+  <a href="https://jiangfengwhu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Saber</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "en".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: {equationNumbers: {autoNumber: "AMS"}},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

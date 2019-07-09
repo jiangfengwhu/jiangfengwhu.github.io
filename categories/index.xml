@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Saber&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Apr 2019 20:36:05 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2019 16:40:27 +0800</lastBuildDate>
     
 	<atom:link href="https://jiangfengwhu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>机器学习</title>
+      <link>https://jiangfengwhu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Tue, 02 Jul 2019 16:40:27 +0800</pubDate>
+      
+      <guid>https://jiangfengwhu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>web</title>

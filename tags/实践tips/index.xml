@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>实践Tips on Saber&#39;s Blog</title>
+    <link>https://jiangfengwhu.github.io/tags/%E5%AE%9E%E8%B7%B5tips/</link>
+    <description>Recent content in 实践Tips on Saber&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Jul 2019 16:40:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://jiangfengwhu.github.io/tags/%E5%AE%9E%E8%B7%B5tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>深度学习基础知识笔记</title>
+      <link>https://jiangfengwhu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 02 Jul 2019 16:40:27 +0800</pubDate>
+      
+      <guid>https://jiangfengwhu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/</guid>
+      <description>深度学习基础部分个人觉得实践中比较重要的部分小结 Why deep learning Weights initialization 网络权重不能使用相同的初始值，会造成hidden layer的有效units变成一个</description>
+    </item>
+    
+  </channel>
+</rss>
